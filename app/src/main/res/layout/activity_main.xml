@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="-1dp">
+
+        <Button
+            android:id="@+id/button_red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_red_dark"
+            android:text="@string/red_button"
+            app:layout_constraintBottom_toBottomOf="@+id/drawing_view"
+            app:layout_constraintStart_toEndOf="@+id/button_black" />
+
+        <Button
+            android:id="@+id/button_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_dark"
+            android:text="@string/blue_button"
+            app:layout_constraintBaseline_toBaselineOf="@+id/button_yellow"
+            app:layout_constraintStart_toEndOf="@+id/button_yellow" />
+
+        <Button
+            android:id="@+id/button_yellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_orange_light"
+            android:text="@string/yellow_button"
+            app:layout_constraintBaseline_toBaselineOf="@+id/button_red"
+            app:layout_constraintStart_toEndOf="@+id/button_red" />
+
+        <Button
+            android:id="@+id/button_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/darker_gray"
+            android:text="@string/black_button"
+            app:layout_constraintBaseline_toBaselineOf="@+id/button_red"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/button_delete"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:background="@android:drawable/ic_menu_delete"
+            android:text="@string/delete_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <view
+            android:id="@+id/drawing_view"
+            class="com.example.oekaki_qiita.DrawingView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button_pen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_pen"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button_eraser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_eraser"
+            app:layout_constraintStart_toEndOf="@+id/button_pen"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button_pen_width_min"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/maru_form"
+            android:text="@string/button_pen_width_min"
+            app:layout_constraintBaseline_toBaselineOf="@+id/button_pen_width_midium"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/button_pen_width_max"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/maru_form"
+            android:text="@string/button_pen_width_max"
+            app:layout_constraintBaseline_toBaselineOf="@+id/button_pen_width_midium"
+            app:layout_constraintStart_toEndOf="@+id/button_pen_width_midium" />
+
+        <Button
+            android:id="@+id/button_pen_width_midium"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="55dp"
+            android:background="@drawable/maru_form"
+            android:text="@string/button_pen_width_midium"
+            app:layout_constraintStart_toEndOf="@+id/button_pen_width_min"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">oekaki_Qiita</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="delete_button">DELETE</string>
+    <string name="red_button">RED</string>
+    <string name="blue_button">BLUE</string>
+    <string name="yellow_button">YELLOW</string>
+    <string name="black_button">BLACK</string>
+    <string name="button_pen">ペン</string>
+    <string name="button_eraser">消しゴム</string>
+    <string name="button_pen_width_min">小</string>
+    <string name="button_pen_width_midium">中</string>
+    <string name="button_pen_width_max">大</string>
+</resources>
